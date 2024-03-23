@@ -471,7 +471,7 @@ body.nav-open .header {
   }
   .footer .container {
     padding: 85px 60px 0;
-    max-width: 1200px;
+    max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -500,6 +500,7 @@ body.nav-open .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0;
   }
   .footer-bar-wrapper > div {
     flex: 1;
@@ -514,6 +515,10 @@ body.nav-open .header {
   .footer-bar__links {
     margin-bottom: 0;
     justify-content: flex-end;
+  }
+  .footer-bar {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 
@@ -536,6 +541,9 @@ body.nav-open .header {
   .footer {
     margin-top: 120px;
   }
+  .footer .container {
+    padding-top: 160px;
+  }
   .footer-tagline {
     font-size: 20px;
   }
@@ -547,5 +555,9 @@ body.nav-open .header {
   .footer-menu {
     margin-top: 110px;
     padding-bottom: 108px;
+  }
+  .footer-bar {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
