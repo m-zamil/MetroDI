@@ -641,6 +641,7 @@
 @media (min-width: 1280px) {
   .products-section {
     margin-top: 124px;
+    max-width: 1024px;
     max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
