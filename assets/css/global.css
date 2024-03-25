@@ -5,6 +5,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *,
 *::before,
@@ -559,5 +560,20 @@ body.nav-open .header {
   .footer-bar {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+}
+
+/* scrolling offsets */
+html {
+  scroll-padding-top: 66.29px;
+}
+@media (min-width: 1280px) {
+  html {
+    scroll-padding-top: 94px;
+  }
+}
+@media (min-width: 1600px) {
+  html {
+    scroll-padding-top: 129px;
   }
 }
