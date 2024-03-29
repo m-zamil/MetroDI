@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="1000" height="1000"><style>
+    #light-icon {
+      display: inline;
+    }
+    #dark-icon {
+      display: none;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      #light-icon {
+        display: none;
+      }
+      #dark-icon {
+        display: inline;
+      }
+    }
+  </style><g id="light-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="1000" height="1000"><rect width="1000" height="1000" rx="200" ry="200" fill="#ffffff"></rect><g transform="matrix(6.047731722620784,0,0,6.047731722620784,100.0054923042859,102.29830131321575)"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="132.281" height="131.52"><svg xmlns="http://www.w3.org/2000/svg" width="132.281" height="131.52" viewBox="0 0 132.281 131.52">
+  <g id="metrodi-logotype-horizontal" transform="translate(0 0)">
+    <g id="Group_2594" data-name="Group 2594" transform="translate(0 0)">
+      <path id="Subtraction_1" data-name="Subtraction 1" d="M66.126,131.521a66.851,66.851,0,0,1-11.005-.911A44.2,44.2,0,0,0,76.682,92.768c0-1.113-.042-2.239-.125-3.347h.125V.048a65.757,65.757,0,0,1,26.079,10.224,12.53,12.53,0,1,0,13.482,12.493c0-.2,0-.4-.014-.6A66.157,66.157,0,0,1,114,111.018V59.2a10.407,10.407,0,1,0-20.814,0v65.92c0,.205.006.414.018.619A65.649,65.649,0,0,1,66.126,131.521ZM0,63.377v0A66.141,66.141,0,0,1,55.868,0V55.38A43.991,43.991,0,0,0,0,63.375Z" transform="translate(0 0)" fill="#242d3d"></path>
+      <circle id="Ellipse_15" data-name="Ellipse 15" cx="21.627" cy="21.627" r="21.627" transform="translate(12.071 70.418)" fill="#242d3d" opacity="0"></circle>
+    </g>
+    <path id="Path_2232" data-name="Path 2232" d="M175.715-7.212a21.327,21.327,0,1,0,21.667,21.325A21.3,21.3,0,0,0,175.715-7.212Zm0,33.057c-6.937,0-11.219-5.4-11.219-11.733S168.778,2.38,175.715,2.38s11.219,5.4,11.219,11.733S182.652,25.845,175.715,25.845Z" transform="translate(-143.253 80.242)" fill="#242d3d"></path>
+  </g>
+</svg></svg></g></svg></g><g id="dark-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="1000" height="1000"><g transform="matrix(7.559664653275981,0,0,7.559664653275981,0.007137398789950566,2.87273496366322)" style="filter: contrast(0.8333333333333334) brightness(1.7)"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="132.281" height="131.52"><svg xmlns="http://www.w3.org/2000/svg" width="132.281" height="131.52" viewBox="0 0 132.281 131.52">
+  <g id="metrodi-logotype-horizontal" transform="translate(0 0)">
+    <g id="Group_2594" data-name="Group 2594" transform="translate(0 0)">
+      <path id="Subtraction_1" data-name="Subtraction 1" d="M66.126,131.521a66.851,66.851,0,0,1-11.005-.911A44.2,44.2,0,0,0,76.682,92.768c0-1.113-.042-2.239-.125-3.347h.125V.048a65.757,65.757,0,0,1,26.079,10.224,12.53,12.53,0,1,0,13.482,12.493c0-.2,0-.4-.014-.6A66.157,66.157,0,0,1,114,111.018V59.2a10.407,10.407,0,1,0-20.814,0v65.92c0,.205.006.414.018.619A65.649,65.649,0,0,1,66.126,131.521ZM0,63.377v0A66.141,66.141,0,0,1,55.868,0V55.38A43.991,43.991,0,0,0,0,63.375Z" transform="translate(0 0)" fill="#fff"></path>
+      <circle id="Ellipse_15" data-name="Ellipse 15" cx="21.627" cy="21.627" r="21.627" transform="translate(12.071 70.418)" fill="#fff" opacity="0"></circle>
+    </g>
+    <path id="Path_2232" data-name="Path 2232" d="M175.715-7.212a21.327,21.327,0,1,0,21.667,21.325A21.3,21.3,0,0,0,175.715-7.212Zm0,33.057c-6.937,0-11.219-5.4-11.219-11.733S168.778,2.38,175.715,2.38s11.219,5.4,11.219,11.733S182.652,25.845,175.715,25.845Z" transform="translate(-143.253 80.242)" fill="#fff"></path>
+  </g>
+</svg></svg></g></svg></g></svg>

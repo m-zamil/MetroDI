@@ -120,7 +120,7 @@
   .hero-content {
     padding-top: 92px;
     margin-left: 120px;
-    max-width: 450px;
+    max-width: 52ch;
   }
   .hero__tagline {
     font-size: 20px;
@@ -193,7 +193,7 @@
   .hero-content {
     padding-top: 105px;
     margin-left: 201px;
-    max-width: 700px;
+    max-width: 70ch;
   }
   .hero__tagline {
     font-size: 32px;

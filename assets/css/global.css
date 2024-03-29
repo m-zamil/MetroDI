@@ -59,7 +59,8 @@ h3 {
 }
 p {
   font-size: 1rem;
-  line-height: 1.5625;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
 }
 
 a {
@@ -84,7 +85,7 @@ select {
 
 .btn {
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 600;
   display: inline-block;
   text-decoration: none;
   line-height: 1;
@@ -97,6 +98,7 @@ select {
   transition: all 0.25s;
   white-space: nowrap;
   text-wrap: nowrap;
+  letter-spacing: 0.03em;
 }
 
 .btn--outline {
@@ -150,10 +152,18 @@ img {
   font-weight: bold;
 }
 .italic {
-  font-style: oblique;
+  font-style: italic;
 }
 .oblique {
   font-style: oblique;
+}
+.underline {
+  text-decoration: underline;
+}
+.underline-thin {
+  text-decoration: underline;
+  text-underline-offset: 0.11em;
+  text-decoration-thickness: 1px;
 }
 
 .container {
@@ -482,7 +492,7 @@ body.nav-open .header {
   }
   .footer .container {
     padding: 85px 60px 0;
-    max-width: 1280px;
+    max-width: 1258px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -501,7 +511,7 @@ body.nav-open .header {
     padding-bottom: 78px;
   }
   .footer-bar {
-    max-width: 1160px;
+    max-width: 1138px;
     margin: 0 auto;
   }
   .footer-bar__links {
