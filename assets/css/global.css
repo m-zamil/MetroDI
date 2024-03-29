@@ -356,6 +356,7 @@ body.nav-open .header {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 40px;
+  letter-spacing: -0.03em;
 }
 .footer-cta {
   text-align: center;
@@ -570,16 +571,19 @@ body.nav-open .header {
   }
   .footer h2 {
     font-size: 120px;
-    margin-top: 30px;
-    margin-bottom: 40px;
+    margin-top: 8px;
+    margin-bottom: 26px;
   }
   .footer-menu {
     margin-top: 110px;
     padding-bottom: 108px;
   }
+  .footer-menu a {
+    line-height: 1.8;
+  }
   .footer-bar {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 52px;
+    padding-bottom: 52px;
   }
 }
 
