@@ -82,6 +82,11 @@
     left: 0;
     width: 260px;
     margin-top: -50px;
+    height: calc(100% - 144px);
+  }
+  .hero-btn-wrapper img {
+    position: sticky;
+    top: 94px;
   }
   .hero-btn-wrapper .btn {
     padding: 18px 30px;
@@ -142,6 +147,9 @@
     width: 415px;
     margin-top: -115px;
     max-width: 30%;
+  }
+  .hero-btn-wrapper img {
+    top: 128px;
   }
   .metrodi-features {
     margin-top: 44px;
