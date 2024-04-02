@@ -1,6 +1,7 @@
 :root {
   --black: #2f3848;
   --accent: #b1ce7a;
+  --accent-hover: #a3c268;
 }
 
 html {
@@ -99,6 +100,7 @@ select {
   white-space: nowrap;
   text-wrap: nowrap;
   letter-spacing: 0.03em;
+  cursor: pointer;
 }
 
 .btn--outline {
@@ -130,7 +132,7 @@ select {
   background-color: var(--accent);
 }
 .btn--accent:hover {
-  background-color: var(--accent);
+  background-color: var(--accent-hover);
 }
 .btn--lg {
   width: 100%;

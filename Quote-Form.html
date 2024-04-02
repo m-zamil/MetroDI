@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MetroDI | Disability Income Specialists for over 60 years</title>
+    <meta name="description" content="We’re a full-service, disability-focused  sales support agency that allows advisors and agents to focus on what they do best- selling and advising clients." />
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="./assets/js/select2.js"></script>
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/quote-form.css" />
+  </head>
+
+  <body>
+    <!-- Header Start ========================== -->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="/" class="nav-logo">
+            <img class="" src="./assets/images/metrodi-logo.svg" width="58" alt="Metro DI logo" />
+          </a>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar bar--1"></span>
+          </div>
+          <div class="nav-menu">
+            <div class="nav-menu-container">
+              <div class="nav-logo--menu">
+                <a href="/" class="nav-logo">
+                  <img src="./assets/images/metrodi-logo.svg" width="90" alt="Metro DI logo" />
+                </a>
+              </div>
+              <ul class="nav-menu-list">
+                <li class="nav-item">
+                  <a href="/" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./Why-MetroDI.html" class="nav-link">Why MetroDI</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./Products.html" class="nav-link">Products</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#carriers" class="nav-link">Carriers</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./About.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./Contacts.html" class="nav-link">Contacts</a>
+                </li>
+              </ul>
+              <div class="nav-ctas">
+                <div class="nav-cta">
+                  <a href="https://members.metrodi.com" class="btn btn--outline">Sign In</a>
+                </div>
+                <div class="nav-cta nav-cta--primary">
+                  <a href="#" class="btn btn--accent"> Request a Quote</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--  ========================== Header End -->
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1>Request a Quote</h1>
+            <p class="hero-text">You fill out a form. We do the rest.</p>
+            <div class="swiper partners-swiper">
+              <ul class="partner-logo-list swiper-wrapper">
+                <li class="swiper-slide"><img src="./assets/images/Assurity_Logo.jpg" width="100" alt="" /></li>
+                <li class="swiper-slide"><img src="./assets/images/Principal_Logo.jpg" width="100" alt="" /></li>
+                <li class="swiper-slide"><img src="./assets/images/The_Standard_Logo.jpg" width="100" alt="" /></li>
+                <li class="swiper-slide"><img src="./assets/images/Ameritas_Logo.jpg" width="100" alt="" /></li>
+                <li class="swiper-slide"><img src="./assets/images/metrodi-logo_petersen_international_underwriters.jpg" width="100" alt="" /></li>
+                <li class="swiper-slide"><img src="./assets/images/fidelity-security-life-insurance-company.jpg" width="100" alt="" /></li>
+                <li class="swiper-slide"><img src="./assets/images/mass-mutual-logo.jpg" width="100" alt="" /></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="quote-form-section">
+        <div class="container">
+          <div class="quote-form-wrapper">
+            <form action="" id="quoteForm" method="POST" class="quote-form">
+              <div class="input-group floating-label-group">
+                <input type="text" name="Agent Name" id="agentName" placeholder=" " />
+                <label for="agentName" class="floating-label">Agent's Full Name</label>
+                <div class="error">Agent's Name is required</div>
+              </div>
+
+              <div class="input-group floating-label-group">
+                <input type="text" name="Client Name" id="clientName" placeholder=" " />
+                <label for="clientName" class="floating-label">Client's Full Name</label>
+                <div class="error">Client's Name is required</div>
+              </div>
+
+              <div class="input-group floating-label-group">
+                <input type="" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" name="Date of Birth" id="dob" placeholder=" " />
+                <label for="dob" class="floating-label">Date of Birth</label>
+                <div class="error"></div>
+              </div>
+
+              <div class="input-group radio-group">
+                <p>What's their gender?</p>
+                <div class="boolean-btn-wrapper" id="gender">
+                  <label for="male">
+                    <input type="radio" name="Gender" value="Male" id="male" />
+                    <span>Male</span>
+                  </label>
+                  <label for="female">
+                    <input type="radio" name="Gender" value="Female" id="female" />
+                    <span>Female</span>
+                  </label>
+                </div>
+                <div class="error">Please select gender</div>
+              </div>
+
+              <div class="two-cols-wrapper">
+                <div class="input-group floating-label-group">
+                  <input type="text" name="Height" id="height" placeholder=" " onblur="(this.placeholder=' ')" onfocus="(this.placeholder='5ft. 6in.')" />
+                  <label for="height" class="floating-label">Height</label>
+                  <div class="error">Height is required</div>
+                </div>
+
+                <div class="input-group floating-label-group">
+                  <input type="text" name="Weight" id="weight" placeholder=" " onblur="(this.placeholder=' ')" onfocus="(this.placeholder='120lbs.')" />
+                  <label for="weight" class="floating-label">Weight</label>
+                  <div class="error">Weight is required</div>
+                </div>
+              </div>
+
+              <div class="input-group floating-label-group">
+                <label for="state" class="floating-label floating-label--floated">State of Residence</label>
+                <select name="State of Residence" placeholder="Search..." id="state">
+                  <option value="">Search...</option>
+                  <option value="AL">Alabama (AL)</option>
+                  <option value="AK">Alaska (AK)</option>
+                  <option value="AZ">Arizona (AZ)</option>
+                  <option value="AR">Arkansas (AR)</option>
+                  <option value="CA">California (CA)</option>
+                  <option value="CO">Colorado (CO)</option>
+                  <option value="CT">Connecticut (CT)</option>
+                  <option value="DE">Delaware (DE)</option>
+                  <option value="DC">District of Columbia (DC)</option>
+                </select>
+                <div class="error"></div>
+              </div>
+
+              <div class="input-group radio-group">
+                <p>Have they used any nicotine products in the last 12 months?</p>
+                <div class="boolean-btn-wrapper">
+                  <label for="nicotineYes">
+                    <input type="radio" name="Have they used any nicotine products in the last 12 months?" value="Yes" id="nicotineYes" />
+                    <span>Yes</span>
+                  </label>
+                  <label for="nicotineNo">
+                    <input type="radio" name="Have they used any nicotine products in the last 12 months?" value="No" id="nicotineNo" />
+                    <span>No</span>
+                  </label>
+                </div>
+                <div class="error"></div>
+              </div>
+
+              <div class="input-group floating-label-group">
+                <input type="text" name="Occupation" id="occupation" placeholder=" " />
+                <label for="occupation" class="floating-label">Occupation</label>
+                <div class="error">Occupation is required</div>
+                <div class="info">If Dr. include specialty and hospital affiliation</div>
+              </div>
+
+              <div class="input-group floating-label-group">
+                <input type="text" name="Duties" id="Duties" placeholder=" " />
+                <label for="Duties" class="floating-label">Duties</label>
+                <div class="error">Duties details is required</div>
+                <div class="info">Including number of hours working per week, length of employment</div>
+              </div>
+
+              <div class="input-group radio-group">
+                <p>Are they a business owner?</p>
+                <div class="boolean-btn-wrapper">
+                  <label for="businessOwnerYes">
+                    <input type="radio" name="Business Owner" value="Yes" id="businessOwnerYes" />
+                    <span>Yes</span>
+                  </label>
+                  <label for="businessOwnerNo">
+                    <input type="radio" name="Business Owner" value="No" id="businessOwnerNo" />
+                    <span>No</span>
+                  </label>
+                </div>
+                <div class="error"></div>
+              </div>
+
+              <div class="input-group floating-label-group">
+                <input type="number" name="Number of W2 employees" id="employees" placeholder=" " />
+                <label for="employees" class="floating-label">Number of W2 employees</label>
+                <div class="error">Please enter Number of W2 employees</div>
+              </div>
+
+              <div class="input-group floating-label-group">
+                <input type="text" name="How long have they own the business?" id="businessAge" placeholder=" " />
+                <div class="input-suffix">months</div>
+                <label for="businessAge" class="floating-label">How long have they own the business?</label>
+                <div class="error">Enter number of months</div>
+              </div>
+              <div class="two-cols-wrapper">
+                <div class="input-group floating-label-group">
+                  <input type="text" name="Income" id="income" class="has-prefix" placeholder=" " />
+                  <div class="input-prefix">$</div>
+                  <label for="income" class="floating-label">Income</label>
+                  <div class="error">Income is required</div>
+                </div>
+
+                <div class="input-group floating-label-group">
+                  <input type="text" name="Bonus Income" id="bonusIncome" class="has-prefix" placeholder=" " />
+                  <div class="input-prefix">$</div>
+                  <label for="bonusIncome" class="floating-label">Bonus Income</label>
+                  <div class="error">Bonus income is required</div>
+                </div>
+              </div>
+
+              <div class="input-group radio-group">
+                <p>Did they file for bankruptcy in the past 10 years?</p>
+                <div class="boolean-btn-wrapper">
+                  <label for="bankruptcyYes">
+                    <input type="radio" name="Did they file for bankruptcy in the past 10 years?" value="Yes" id="bankruptcyYes" />
+                    <span>Yes</span>
+                  </label>
+                  <label for="bankruptcyNo">
+                    <input type="radio" name="Did they file for bankruptcy in the past 10 years?" value="No" id="bankruptcyNo" />
+                    <span>No</span>
+                  </label>
+                </div>
+                <div class="error"></div>
+              </div>
+
+              <h2>Group coverage:</h2>
+
+              <div class="input-group floating-label-group">
+                <input type="text" name="Group coverage details" id="groupCoverage" placeholder=" " />
+                <label for="groupCoverage" class="floating-label">Group coverage details</label>
+                <div class="error">Group coverage details is required</div>
+                <div class="info">to include % of income, cap, paid for by</div>
+              </div>
+
+              <div class="input-group radio-group">
+                <p>Any insurance coverage applied for and declined or not issued as applied for in the past 5 years.</p>
+                <div class="boolean-btn-wrapper">
+                  <label for="coverageAppliedYes">
+                    <input type="radio" name="Any insurance coverage applied for and declined or not issued as applied for in the past 5 years." value="Yes" id="coverageAppliedYes" />
+                    <span>Yes</span>
+                  </label>
+                  <label for="coverageAppliedNo">
+                    <input type="radio" name="Any insurance coverage applied for and declined or not issued as applied for in the past 5 years." value="No" id="coverageAppliedNo" />
+                    <span>No</span>
+                  </label>
+                </div>
+                <div class="error"></div>
+              </div>
+
+              <h2>Medical History:</h2>
+
+              <div class="input-group floating-label-group">
+                <input type="text" name="Medical history details" id="medicalHistory" placeholder=" " />
+                <label for="medicalHistory" class="floating-label">Medical history details</label>
+                <div class="error">Medical history details is required</div>
+                <div class="info">All Dr visits in the past 5 years including any surgery, medications, chiropractor treatment, mental health treatment.</div>
+              </div>
+
+              <div class="input-group radio-group">
+                <p>Does the client participate in any recreational/ hazardous sports</p>
+                <div class="boolean-btn-wrapper">
+                  <label for="sportsPartYes">
+                    <input type="radio" name="Does the client participate in any recreational/ hazardous sports" value="Yes" id="sportsPartYes" />
+                    <span>Yes</span>
+                  </label>
+                  <label for="sportsPartNo">
+                    <input type="radio" name="Does the client participate in any recreational/ hazardous sports" value="No" id="sportsPartNo" />
+                    <span>No</span>
+                  </label>
+                </div>
+                <div class="error"></div>
+              </div>
+
+              <button class="btn btn--lg btn--accent form-btn" type="submit">Submit</button>
+            </form>
+          </div>
+          <p class="term-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas accumsan lacus vel facilisis. Ipsum dolor sit amet consectetur. In aliquam sem fringilla ut morbi tincidunt. Cras pulvinar mattis nunc sed blandit libero. Sed cras ornare arcu dui vivamus arcu felis. Lobortis elementum nibh tellus molestie. Sed felis eget velit aliquet. Lectus sit amet est placerat in. Venenatis tellus in metus vulputate eu scelerisque felis imperdiet proin. Integer vitae justo eget magna fermentum. Viverra suspendisse potenti nullam ac tortor vitae. Nunc lobortis mattis aliquam faucibus purus in massa. Elit duis tristique sollicitudin nibh sit amet commodo nulla. Eu facilisis sed odio morbi quis. Pellentesque elit eget gravida cum sociis natoque penatibus. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Turpis massa sed elementum tempus egestas sed. Lectus nulla at volutpat diam ut venenatis tellus in.
+            Turpis in eu mi bibendum neque egestas. Ullamcorper morbi tincidunt ornare massa eget egestas purus. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus est. Ut tortor pretium viverra suspendisse potenti nullam ac. Vulputate dignissim suspendisse in est ante in. Nam at lectus urna duis convallis. Nisi est sit amet facilisis magna etiam tempor. Vulputate ut pharetra sit amet aliquam id. Erat imperdiet sed euismod nisi porta. Eu feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Nunc faucibus a pellentesque sit amet porttitor eget dolor morbi.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Start ======================= -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-tagline">(connect)</div>
+        <h2>Let's chat</h2>
+        <div class="footer-cta">
+          <a href="mailto:keith@metrodi.com" class="btn btn--outline btn--light">Get In Touch</a>
+        </div>
+        <div class="footer-menu">
+          <div>
+            <a href="tel:(866) 638-7677">(866) 638-7677 </a>
+            <a href="mailto:hello@metrodi.com">hello@metrodi.com</a>
+          </div>
+          <div>
+            <a href="./About.html">About Us </a>
+            <a href="./About.html#team">Our Team </a>
+            <a href="#">FAQs</a>
+          </div>
+          <div>
+            <a href="./Why-MetroDI.html">Why MetroDI </a>
+            <a href="#">For Agents </a>
+            <a href="#">Request a Quote</a>
+          </div>
+          <div>
+            <a href="#carriers">Our Carriers </a>
+            <a href="./Products.html">Our Products </a>
+            <a href="#">News</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bar">
+        <div class="footer-bar-wrapper">
+          <div class="footer-bar__social">
+            <a href="#"><img src="./assets/images/icon-facebook.svg" alt="" /></a>
+            <a href="#"><img src="./assets/images/icon-twitter.svg" alt="" /></a>
+            <a href="#"><img src="./assets/images/icon-linkedin.svg" alt="" /></a>
+          </div>
+          <div class="footer-bar__links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms &amp; Conditions </a>
+            <a href="#" class="sitemap__link">Sitemap: XML HTML</a>
+          </div>
+          <div class="footer-bar__copyright">Copyright © 2023 MetroDI. All rights reserved.</div>
+        </div>
+      </div>
+    </footer>
+    <!-- ======================= Footer End -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/quote-form.js"></script>
+  </body>
+</html>
