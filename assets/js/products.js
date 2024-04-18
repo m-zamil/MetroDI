@@ -9,17 +9,12 @@ accordions.forEach((acc) => {
   acc.addEventListener('click', () => {
     const tobeActiveEl = acc.nextElementSibling;
 
-    if (tobeActiveEl == activeEl) {
-      activeEl.classList.toggle('active');
-      activeEl.style.maxHeight = null;
-      activeEl = null;
-      sidebarLinkUnderline();
+    if (tobeActiveEl.classList.contains('active')) {
+      acc.classList.toggle('active');
+      tobeActiveEl.classList.toggle('active');
+      tobeActiveEl.style.maxHeight = null;
     } else {
-      if (activeEl) {
-        activeEl.classList.toggle('active');
-        activeEl.style.maxHeight = null;
-      }
-
+      acc.classList.toggle('active');
       tobeActiveEl.classList.toggle('active');
       tobeActiveEl.style.maxHeight = tobeActiveEl.scrollHeight + 'px';
 
@@ -28,24 +23,20 @@ accordions.forEach((acc) => {
         window.scroll({
           top: top - 200,
         });
-      }, 0);
-
-      // tobeActiveEl.scrollIntoView(true);
-
-      activeEl = tobeActiveEl;
-
-      let linkId = activeEl.parentElement.getAttribute('id');
-      sidebarLinkUnderline(document.querySelector(`a[href="#${linkId}"]`));
+      }, 500);
     }
   });
 });
 
-/* Open product accordion panel when clicking on sidebar links and handle underline */
+/* Open product accordion panel when clicking on sidebar links and  */
 const prodLinks = document.querySelectorAll('.products-list li a');
 prodLinks.forEach((link) => {
-  link.addEventListener('click', () => {
-    sidebarLinkUnderline(link);
-    document.querySelector(`${link.getAttribute('href')} .product-accordion`).click();
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    var targetLink = document.querySelector(`${link.getAttribute('href')} .product-accordion`);
+    if (targetLink.classList.contains('active')) {
+      targetLink.scrollIntoView();
+    } else targetLink.click();
   });
 });
 
@@ -54,15 +45,4 @@ prodLinks.forEach((link) => {
 const def = document.querySelector(`${window.location.hash} .product-accordion`);
 if (window.location.hash) {
   def.click();
-}
-
-/* Handle underlining of active sidebar elements */
-function sidebarLinkUnderline(el) {
-  const underlined = document.querySelector('.products-list a.underline');
-  if (underlined) {
-    underlined.classList.remove('underline');
-  }
-  if (el) {
-    el.classList.add('underline');
-  }
 }

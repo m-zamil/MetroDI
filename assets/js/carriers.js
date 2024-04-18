@@ -1,7 +1,6 @@
 //accordion
 const accordions = document.querySelectorAll('.carrier-accordion');
 let activeEl = document.querySelector('.carrier-desc-container.active');
-console.log(activeEl);
 activeEl.style.maxHeight = 'unset';
 
 /* Accordions */
@@ -9,33 +8,21 @@ accordions.forEach((acc) => {
   acc.addEventListener('click', () => {
     const tobeActiveEl = acc.nextElementSibling;
 
-    if (tobeActiveEl == activeEl) {
-      activeEl.classList.toggle('active');
-      activeEl.style.maxHeight = null;
-      activeEl = null;
-      sidebarLinkUnderline();
+    if (tobeActiveEl.classList.contains('active')) {
+      acc.classList.toggle('active');
+      tobeActiveEl.classList.toggle('active');
+      tobeActiveEl.style.maxHeight = null;
     } else {
-      if (activeEl) {
-        activeEl.classList.toggle('active');
-        activeEl.style.maxHeight = null;
-      }
-
+      acc.classList.toggle('active');
       tobeActiveEl.classList.toggle('active');
       tobeActiveEl.style.maxHeight = tobeActiveEl.scrollHeight + 'px';
 
       setTimeout(function () {
         let top = tobeActiveEl.offsetTop;
         window.scroll({
-          top: top - 252,
+          top: top - 210,
         });
-      }, 0);
-
-      // tobeActiveEl.scrollIntoView(true);
-
-      activeEl = tobeActiveEl;
-
-      let linkId = activeEl.parentElement.getAttribute('id');
-      sidebarLinkUnderline(document.querySelector(`a[href="#${linkId}"]`));
+      }, 500);
     }
   });
 });
@@ -43,9 +30,12 @@ accordions.forEach((acc) => {
 /* Open product accordion panel when clicking on sidebar links and handle underline */
 const prodLinks = document.querySelectorAll('.carriers-list li a');
 prodLinks.forEach((link) => {
-  link.addEventListener('click', () => {
-    sidebarLinkUnderline(link);
-    document.querySelector(`${link.getAttribute('href')} .carrier-accordion`).click();
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    var targetLink = document.querySelector(`${link.getAttribute('href')} .carrier-accordion`);
+    if (targetLink.classList.contains('active')) {
+      targetLink.scrollIntoView();
+    } else targetLink.click();
   });
 });
 
@@ -54,17 +44,6 @@ prodLinks.forEach((link) => {
 const def = document.querySelector(`${window.location.hash} .carrier-accordion`);
 if (window.location.hash) {
   def.click();
-}
-
-/* Handle underlining of active sidebar elements */
-function sidebarLinkUnderline(el) {
-  const underlined = document.querySelector('.carriers-list a.underline');
-  if (underlined) {
-    underlined.classList.remove('underline');
-  }
-  if (el) {
-    el.classList.add('underline');
-  }
 }
 
 /* Tabs ======================= */
@@ -87,7 +66,6 @@ function openTab(tabBtn, contentId) {
     tabBtns[i].className = tabBtns[i].className.replace(' active', '');
   }
   document.getElementById(contentId).style.display = 'block';
-  console.log(tabBtn, 'tabbtn');
   // tabBtn.className += ' active';
   tabBtn.classList.add('active');
 }

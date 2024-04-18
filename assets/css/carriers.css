@@ -100,6 +100,9 @@ html {
     font-size: 22px;
     margin-bottom: 10px;
   }
+  .hero-sidebar li a:hover {
+    text-decoration: underline;
+  }
 }
 @media (min-width: 1600px) {
   .hero {
@@ -202,12 +205,14 @@ html {
   max-height: 0;
   overflow: hidden;
   transition: none;
+  transition: max-height 0.5s ease-out;
   margin-left: -30px;
 }
 .carrier-desc-container.active {
   display: flex;
   transition: max-height 0.5s ease-out;
 }
+
 .carrier-logo-wrapper {
   height: 100px;
   background-color: #f7f9fc;
@@ -299,9 +304,14 @@ p.carrier-desc-text {
   .carrier-title::before {
     left: -42px;
   }
-  .carrier-desc-container.active {
-    margin-top: 58px;
+  .carrier-desc-container {
+    position: relative;
+    top: 30px;
   }
+  .carrier-desc-container.active {
+    margin-bottom: 30px;
+  }
+
   .carrier-logo-wrapper {
     background-color: transparent;
     display: block;
@@ -313,6 +323,7 @@ p.carrier-desc-text {
   }
   .carrier-logo-wrapper--md {
     margin-right: 12px;
+    display: block;
   }
   .carrier-logo {
     height: 57px;
@@ -499,8 +510,6 @@ p.carrier-desc-text {
     margin-right: -50px;
     padding-left: 60px;
     padding-right: 60px;
-  }
-  .comparing-wrapper {
   }
   .compare-tables {
     padding: 0;

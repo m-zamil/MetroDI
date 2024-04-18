@@ -164,7 +164,8 @@ html {
   display: flex;
   max-height: 0;
   overflow: hidden;
-  transition: none;
+  /* transition: none; */
+  transition: max-height 0.5s ease-out;
 }
 .product-desc-container.active {
   display: flex;
@@ -291,7 +292,7 @@ p.product-desc-text {
     margin-bottom: 15px;
     line-height: 1.36;
   }
-  .products-list li a.underline {
+  .products-list li a:hover {
     text-decoration: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 0.25em;
